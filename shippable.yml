@@ -33,4 +33,5 @@ script:
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
 
 after_success:
+  - env
   - eb init && eb deploy
