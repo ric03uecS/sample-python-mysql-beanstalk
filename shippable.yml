@@ -34,4 +34,5 @@ script:
 
 after_success:
   - env
-  - eb init && eb deploy
+  - yes yes | eb init
+  - yes yes | eb deploy
